@@ -2,6 +2,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Problem_02 {
+    // https://school.programmers.co.kr/learn/courses/30/lessons/67256
     public static String solution(int[] numbers, String hand){
         String answer = "";
 
