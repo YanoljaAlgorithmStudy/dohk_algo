@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class problem_01 {
+public class Problem_01 {
     //https://school.programmers.co.kr/learn/courses/30/lessons/42576
     public static String solution(String[] participant, String[] completion){
         String answer ="";
