@@ -3,8 +3,10 @@ import java.util.HashMap;
 
 public class Problem_02 {
     // https://school.programmers.co.kr/learn/courses/30/lessons/67256
-    public static String solution(int[] numbers, String hand){
+    public static String solution(int[] numbers, String hand){ // static-static
         String answer = "";
+
+        Problem_02 prob = new Problem_02();
 
         //왼손의 현재 위치: L*
         int currentLeft = 11;
@@ -43,7 +45,8 @@ public class Problem_02 {
             if (leftDistance.get(num) < rightDistance.get(num)) {
                 currentLeft = num;
                 answer += "L";
-                leftDistance = setDistance(currentLeft, leftDistance, true);
+                //leftDistance = setDistance(currentLeft, leftDistance, true);
+                leftDistance = prob.setDistance(currentLeft, leftDistance, true);
             } else if (leftDistance.get(num) > rightDistance.get(num)) {
                 currentRight = num;
                 answer += "R";
