@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class BJ11724 {
+    //https://www.acmicpc.net/problem/11724
     final static int MAX = 1000 + 10;
     static int N, M;
     static boolean graph[][];
@@ -30,6 +31,11 @@ public class BJ11724 {
         int u, v;
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
+//            1 2
+//            2 5
+//            5 1
+//            3 4
+//            4 6
             u = Integer.parseInt(st.nextToken());
             v = Integer.parseInt(st.nextToken());
             graph[u][v] = true;
