@@ -8,11 +8,13 @@ public class Goorm195686 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int N = Integer.parseInt(br.readLine());
+
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int K = Integer.parseInt(st.nextToken());
 
         ArrayList<Integer> k = new ArrayList<>();
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i = 0; i < N; i++) {
            k.add(Integer.parseInt(st.nextToken()));
         }
