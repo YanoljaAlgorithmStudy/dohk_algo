@@ -10,7 +10,7 @@ public class BJ11724 {
     static int answer = 0;
 
     static void dfs(int vertex){
-        visited[vertex] = true;
+        visited[vertex] = true; // b
 
         for (int j = 1; j <= N; j++) {
             if(visited[j] == false && graph[vertex][j] == true) {

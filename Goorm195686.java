@@ -8,20 +8,22 @@ public class Goorm195686 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int K = Integer.parseInt(st.nextToken());
+        int N = Integer.parseInt(br.readLine());
 
         ArrayList<Integer> k = new ArrayList<>();
 
+        StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i = 0; i < N; i++) {
-           k.add(Integer.parseInt(st.nextToken()));
+            k.add(Integer.parseInt(st.nextToken()));
         }
+        // for(Integer n : k){
+        //     System.out.println("n = " + n);
+        // }
 
-        int answer = 0;
+        int answer = 0; //k.get(0);
         int maximum = Collections.max(k);
         int maximumIdx = k.indexOf(maximum);
+        int tempNum = maximum;
 
         for (int i = 0; i < k.size(); i++) {
             if(i <= maximumIdx || k.get(i) == maximum) {
